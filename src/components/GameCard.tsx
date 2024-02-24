@@ -9,9 +9,8 @@ interface Props {
 }
 
 export default function GameCard({ game }: Props) {
-  console.log(game.metacritic)
   return (
-    <Card borderRadius={10} overflow={"hidden"}>
+    <Card width={"300px"} borderRadius={10} overflow={"hidden"}>
       <Image src={getCroppedImageUrl(game.background_image)} />
       <CardBody>
         <Heading fontSize={"2xl"}>
