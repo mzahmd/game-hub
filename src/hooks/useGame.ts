@@ -14,12 +14,16 @@ export interface Game {
   metacritic: number;
 }
 
-export default function useGame(
-  gameQuery: GameQuery
-) {
+export default function useGame(gameQuery: GameQuery) {
   return useData<Game>(
     "/games",
-    { params: { genres: gameQuery.genre?.id, platforms: gameQuery.platform?.id } },
+    {
+      params: {
+        genres: gameQuery.genre?.id,
+        platforms: gameQuery.platform?.id,
+        ordering: gameQuery.sortOrder,
+      },
+    },
     [gameQuery]
   );
 }
