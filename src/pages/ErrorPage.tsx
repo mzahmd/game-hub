@@ -8,8 +8,8 @@ export default function ErrorPage() {
     <>
       <Navbar />
       <Box padding={5}>
-      <Heading>Ooop</Heading>
-      <Text>{isRouteErrorResponse(error) ? "This page does not exist" : "An unexpected error occurd"}</Text>
+        <Heading>Ooop</Heading>
+        <Text>{isRouteErrorResponse(error) ? "This page does not exist" : "An unexpected error occurd"}</Text>
       </Box>
     </>
   )
