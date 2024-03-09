@@ -8,6 +8,9 @@ export default function GenreList() {
   const selectedGenreId = useGameQueryStore(s => s.gameQuery.genreId)
   const setSelectedGenreId = useGameQueryStore(s => s.setGenreId)
 
+  console.log(selectedGenreId);
+  
+
   if (error) {
     return null
   }
