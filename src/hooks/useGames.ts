@@ -3,7 +3,7 @@ import { AxiosRequestConfig } from "axios";
 import ms from "ms";
 import APIClient, { FetchResponse } from "../services/api-client";
 import useGameQueryStore from "../store";
-import { Game } from "../entities/Game";
+import Game from "../entities/Game";
 
 const apiClient = new APIClient<Game>("/games");
 
