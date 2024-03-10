@@ -23,6 +23,7 @@ export default function useGames() {
         },
       } as AxiosRequestConfig),
     getNextPageParam: (lastPage, allPages) => {
+      // allPages: alles was man bisher sieht
       return lastPage.next ? allPages.length + 1 : undefined;
     },
     staleTime: ms("24h"),
